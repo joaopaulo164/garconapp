@@ -25,13 +25,24 @@
 
     <platform name="android">
         <allow-intent href="market:*" />
-        <splash src="www/img/splash.png"/>
-        <preference name="SplashScreenDelay" value="10000" />
+        <splash src="res/screen/android/splash.png" density=""/>
+        <splash src="res/screen/android/splash.png" density="port-hdpi"/>
+        <splash src="res/screen/android/splash.png" density="port-ldpi"/>
+        <splash src="res/screen/android/splash.png" density="port-mdpi"/>
+        <splash src="res/screen/android/splash.png" density="port-xhdpi"/>
+        <icon src="res/android/icon.png" density="xxxhdpi" />
     </platform>
 
     <platform name="ios">
         <preference name="DisallowOverscroll" value="true"></preference>
+        <splash src="res/screen/ios/splash.png" width="768" height="1024"/>
+        <!-- iOS 8.0+ -->
+        <!-- iPhone 6 Plus  -->
+        <icon src="res/ios/icon.png" width="180" height="180" />
         <allow-intent href="itms:*" />
         <allow-intent href="itms-apps:*" />
     </platform>
+
+    <preference name="SplashScreenDelay" value="1000" />
+
 </widget>
