@@ -9,7 +9,15 @@
         <param name="android-package" value="org.apache.cordova.splashscreen.SplashScreen" />
         <param name="onload" value="true" />
     </feature>
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="BarcodeScanner">
+        <param name="android-package" value="com.phonegap.plugins.barcodescanner.BarcodeScanner" />
+    </feature>
     <allow-intent href="market:*" />
+    <preference name="StatusBarBackgroundColor" value="#E86C13" />
     <icon density="ldpi" src="resources\android\icon\drawable-ldpi-icon.png" />
     <icon density="mdpi" src="resources\android\icon\drawable-mdpi-icon.png" />
     <icon density="hdpi" src="resources\android\icon\drawable-hdpi-icon.png" />
@@ -26,7 +34,6 @@
         Apache Cordova Team
     </author>
     <preference name="Orientation" value="portrait" />
-    <preference name="Fullscreen" value="true" />
     <preference name="BackgroundColor" value="0xf2f2f2ff" />
     <preference name="SplashScreenDelay" value="1000" />
     <preference name="SplashScreen" value="screen" />

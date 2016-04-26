@@ -12,6 +12,12 @@
         },
         "cordova-plugin-splashscreen": {
             "PACKAGE_NAME": "br.com.palotec.garconapp"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "br.com.palotec.garconapp"
+        },
+        "phonegap-plugin-barcodescanner": {
+            "PACKAGE_NAME": "br.com.palotec.garconapp"
         }
     },
     "dependent_plugins": {}
