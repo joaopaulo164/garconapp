@@ -38,3 +38,9 @@ $('.acao-limpar').on('click', function () {
    $('#numero-mesa').val('');
    $('.badge').remove();
 });
+
+$('.scan-qrcode').click(function(){
+    cordova.plugins.barcodeScanner.scan(function(resultado){
+        alert(resultado.text);
+    });
+});

@@ -14,5 +14,21 @@
         },
         "is_top_level": true,
         "variables": {}
+    },
+    "cordova-plugin-statusbar": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-statusbar"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "phonegap-plugin-barcodescanner": {
+        "source": {
+            "type": "registry",
+            "id": "phonegap-plugin-barcodescanner@~4.1.0"
+        },
+        "is_top_level": true,
+        "variables": {}
     }
 }

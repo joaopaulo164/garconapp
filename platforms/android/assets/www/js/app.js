@@ -38,3 +38,15 @@ $('.acao-limpar').on('click', function () {
    $('#numero-mesa').val('');
    $('.badge').remove();
 });
+
+$('.scan-qrcode').click(function(){
+    cordova.plugins.barcodeScanner.scan(function(resultado){
+        if (resultado.text){
+            Materialize.toast('Mesa' + resultado.text, 2000);
+            $('#numero-mesa').val(resultado.text);
+        }
+    },
+        function(erro) {
+            Materialize.toast('Erro ' + erro, 2000, 'red-text');
+        });
+});
